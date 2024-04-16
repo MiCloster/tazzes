@@ -31,3 +31,41 @@ export  function ArrowToLeft () {
 </svg>
     )
   }
+
+  export function AddToCartIcon () {
+    return (
+      <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' strokeWidth='1' stroke='currentColor' fill='none' strokeLinecap='round' strokeLinejoin='round'>
+        <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+        <path d='M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0' />
+        <path d='M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0' />
+        <path d='M17 17h-11v-14h-2' />
+        <path d='M6 5l6 .429m7.138 6.573l-.143 1h-13' />
+        <path d='M15 6h6m-3 -3v6' />
+      </svg>
+    )
+  }
+  
+  export function RemoveFromCartIcon () {
+    return (
+      <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' strokeWidth='1' stroke='currentColor' fill='none' strokeLinecap='round' strokeLinejoin='round'>
+        <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+        <path d='M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0' />
+        <path d='M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0' />
+        <path d='M17 17h-11v-14h-2' />
+        <path d='M6 5l8 .571m5.43 4.43l-.429 3h-13' />
+        <path d='M17 3l4 4' />
+        <path d='M21 3l-4 4' />
+      </svg>
+    ) }
+
+    export function CartIcon(){
+      return(
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-basket2" viewBox="0 0 16 16">
+          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0z"/>
+          <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6z"/>
+        </svg>
+      )
+    }
+
+
+   

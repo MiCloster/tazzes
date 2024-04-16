@@ -79,7 +79,7 @@ export default function MenuHome() {
                             title="Coffee Cups"
                             description="Explore a wide range of coffee mugs"
                             imageUrl= "https://gardenandgun.com/wp-content/uploads/2020/03/190405-Evergreen1926-6-Mugs-Web-960x1200.jpg"
-                            link="/categories/coffee-cup"
+                            link="/category/coffee-cup"
                             />
                             </div>
                             <div className="col">
@@ -88,7 +88,7 @@ export default function MenuHome() {
                             description="Discover our collection of tea cups"
                             imageUrl="https://nestasia.in/cdn/shop/products/96.3_5953f7ec-dded-4dff-a37f-2a865512a155.jpg?v=1652159099&width=600"
                             buttonText="Shop now"
-                            link="/categories/tea-cup"
+                            link="/category/tea-cup"
                             />
                             </div>
                         </div>

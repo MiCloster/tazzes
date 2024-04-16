@@ -1,0 +1,25 @@
+{
+    "categories":[
+        { "id": "all", 
+        "name": "All Cups",
+        "image": "https://i.etsystatic.com/5281202/r/il/b3b77a/4876699237/il_300x300.4876699237_60cd.jpg"
+       },
+       { "id": "coffee-cup", 
+       "name": "Coffee Cups",
+       "image": "https://www.orangeskies.in/cdn/shop/articles/Coffee_Ceramic_Mugs_1.jpg?v=1678428033"
+      },
+      { "id": "tea-cup", 
+      "name": "Tea Cups",
+      "image": "https://i.etsystatic.com/5477623/r/il/8e07af/2179978418/il_570xN.2179978418_7y31.jpg"
+     }, 
+     { "id": "mug", 
+     "name": "Mugs",
+     "image": "https://m.media-amazon.com/images/I/71Rl87jO1jL.jpg"
+    }
+      
+  
+    ],
+    "total":100,
+    "skip":0,
+    "limit":30
+  }

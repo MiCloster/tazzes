@@ -26,6 +26,21 @@ const reducer = (state,action) => {
         case 'CLEAR_CART':{
             return initialState
         }
+        case 'REMOVE_ONE_FROM_CART': {
+            const { id } = actionPayload;
+            const productIndex = state.findIndex(item => item.id === id);
+            if (productIndex >= 0) {
+                const newState = [...state];
+                if (newState[productIndex].quantity > 1) {
+                    newState[productIndex].quantity -= 1;
+                } else {
+                    newState.splice(productIndex, 1);
+                }
+                return newState;
+            }
+            return state;
+        }
+        
 
 
     }
@@ -48,12 +63,19 @@ export function CartProvider( {children} ) {
         type: 'CLEAR_CART'
     })
 
+    const removeOneFromCart = product => dispatch({
+        type: 'REMOVE_ONE_FROM_CART',
+        payload: product
+    });
+    
+
   return (
     <CartContext.Provider value={{
         cart: state,
         addToCart,
         removeFromCart,
-        clearCart
+        clearCart,
+        removeOneFromCart
     }}>
         {children}
     </CartContext.Provider>

@@ -4,8 +4,9 @@ export const FiltersContext = createContext()
 
 export function FiltersProvider ({ children }) {
   const [filters, setFilters] = useState({
-   
-    color: 'all'
+    color: 'all',
+    category: 'all',
+    type:'all'
   })
 
   return (

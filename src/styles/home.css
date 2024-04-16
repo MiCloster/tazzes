@@ -85,11 +85,11 @@
 }
 
 .button-carousel:focus {
-  outline: none; /* Quita el borde de enfoque */
+  outline: none; 
 }
 
 .button-carousel:active {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra al hacer clic */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .carousel-inner{

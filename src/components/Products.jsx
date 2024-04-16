@@ -10,12 +10,18 @@ export function Products ({ products }) {
 
   return (
     <main className='products'>
-      <ul>
-        {products.map(product => {
-          const isProductInCart = checkProductInCart(product)
-
+      {products.length === 0 ? (
+        <div className="no-products">
+          <p>No products match the selected filters.</p>
+        </div>) : 
+        (<ul>
+          {products.map(product => {
+            const isProductInCart = checkProductInCart(product)
           return (
-            <li key={product.id}>
+            <>
+            <div className="product-container">
+              <div className="product-grid">
+              <li  key={product.id}>
               <img
                 src={product.imageUrl}
                 alt={product.name}
@@ -37,12 +43,21 @@ export function Products ({ products }) {
                       : "Add"
                   }
                 </button>
+                
               </div>
             
             </li>
-          )
+              </div>
+          
+            </div>
+            
+            
+            </>)
         })}
       </ul>
+          ) }
+      
     </main>
+
   )
 }

@@ -14,24 +14,35 @@ export const Home = () => {
     const { filterProducts } = useFilters();
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [firstLoad, setFirstLoad] = useState(() => {
+        const isFirstLoad = JSON.parse(localStorage.getItem('firstLoad'));
+        return isFirstLoad !== null ? isFirstLoad : true;
+    });
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+    
+    useEffect(() => {
+        const preloadDuration = firstLoad ? 4000 : 1500;
+    
         setTimeout(() => {
             const filtered = filterProducts(initialProducts);
             setFilteredProducts(filtered);
             setIsLoading(false);
-        }, 4000);
-    }, [filterProducts]);
+            if (firstLoad) {
+                localStorage.setItem('firstLoad', JSON.stringify(false));
+                setFirstLoad(false); 
+            }
+        }, preloadDuration);
+        console.log(preloadDuration);
+    }, [filterProducts, firstLoad]);
+    
 
-    return (
-        <div className='container-home-page'>
-            <div className={isLoading ? "preloader-container" : "preloader-container fade-out"}>
-                <Preloader />
-            </div>
-            <Transition in={!isLoading} timeout={100}>
-                {state => (
-                    <div className={`content-container ${state}`}>
-                      <div className='promocion'> 
+    function Menu(){
+        return(
+            <>
+            <div className='promocion'> 
                         <p className='text-promocion'>FLASH SALE! SAVE 20% ON SELECT MUG DESIGNS TODAY ONLY</p>
                       </div>
                       <header>
@@ -43,16 +54,19 @@ export const Home = () => {
 
                       <div className="home-container">
                         <MenuHome></MenuHome>
-
                       </div>
-                      
-                        {/* <Filters></Filters>
-                        <Products products={filteredProducts}></Products>
-                        <Cart></Cart> */}
-                    </div>
-                )}
-            </Transition>
-            
-        </div>
+                      </>
+        )
+    }
+
+    
+    return (
+        <>
+        {firstLoad && ( <div className={isLoading ? "preloader-container" : "preloader-container fade-out"}>
+                <Preloader />
+            </div>)}
+           
+            <div className='fade-in'>{Menu()} </div>
+        </>
     );
 };

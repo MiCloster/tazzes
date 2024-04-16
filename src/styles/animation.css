@@ -104,10 +104,25 @@
     transition: opacity 2s ease;
 }
 
+
 .content-container.entering {
     opacity: 0;
 }
 
 .content-container.entered {
     opacity: 1;
+}
+
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out; /* Duración y función de tiempo de la animación */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Comienza con opacidad 0 (invisible) */
+  }
+  to {
+    opacity: 1; /* Termina con opacidad 1 (totalmente visible) */
+  }
 }
