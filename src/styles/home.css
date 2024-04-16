@@ -1,0 +1,177 @@
+/* .menu-home{
+    
+  } */
+
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover{ 
+
+  box-shadow: 0 24px 38px 5px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+}
+
+.card-menu {
+  background-color: #e7e7e7;
+  border: 0;
+  padding-top: 1rem;
+
+}
+
+.name-options{
+    display: flex;
+    align-items: center;
+}
+
+.title-icon-container {
+  display: flex;
+  align-items: center;
+  margin-left: 1.2rem;
+}
+
+.icon{
+    display: flex;
+    align-items: flex-start;
+    width: 1.5rem;
+    height: 1.5rem;  
+}
+
+.card-text-container{
+  margin-bottom: 0.7rem;
+}
+
+.container-card-popular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.2rem;
+}
+
+.container-card-trending{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.2rem;
+}
+
+.card-trending-title{
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+
+.image-wrapped{
+  height: 8rem;
+}
+
+.image-wrapped img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.button-carousel{
+  margin-right: 1rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border: 0;
+}
+
+.carousel-inner{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container-card-carousel {
+    width: 33.33%; /* Esto asegura que haya tres tarjetas en una fila en un carousel */
+    float: left; /* Alinea las tarjetas en línea */
+    padding: 0 10px;
+    height: 200px;
+     
+  }
+
+
+.card-trending {
+    max-width: 100%; /* Ajusta el tamaño máximo de la tarjeta al 100% del contenedor */
+    height: 100%; /* Ajusta la altura automáticamente según el contenido */
+    
+}
+.columna-botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.column-carousel{
+  background-color: #e7e7e7;
+  padding: 0.2rem;
+  border-radius: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+
+.tabla-offers{
+  width: 25rem;
+}
+
+.table-trending{
+  width: 40rem;
+}
+
+.table-column{
+  margin-bottom: 1.5rem;
+  border-radius: 0.7rem;
+  background-color: #e7e7e7;
+  display: flex;
+  flex:1; 
+}
+
+.table-container {
+  width: 100%;
+}
+
+.big-table-column {
+  float: left;
+  width: 45%;
+  margin-right: 2%;
+}
+
+.popular-table{
+    margin-top: 2rem;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.popular-categories{
+  display: table-row;
+  align-items: center;
+}
+
+.card-categories{
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+}
+
+.card-title-categorie{
+  font-weight: bold;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+}
+
+.card-description-categories{
+  font-weight: bold;
+}
+
+.no-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: gray;
+  padding: 5rem;
+}
