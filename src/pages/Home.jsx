@@ -24,7 +24,7 @@ export const Home = () => {
     }, [filterProducts]);
 
     return (
-        <>
+        <div className='container-home-page'>
             <div className={isLoading ? "preloader-container" : "preloader-container fade-out"}>
                 <Preloader />
             </div>
@@ -53,6 +53,6 @@ export const Home = () => {
                 )}
             </Transition>
             
-        </>
+        </div>
     );
 };

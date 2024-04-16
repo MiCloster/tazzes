@@ -15,12 +15,17 @@ const CarouselMenu = () => {
           </div>
         
           <h4 className="name-options">Trending Cups</h4>
-          <div style={{ marginLeft: 'auto' }}>
+          <div className="container-button-carousel" style={{ marginLeft: 'auto' }}>
             <button className="button-carousel" href="#carouselExampleIndicators2" role="button" data-bs-slide="prev">
+              <div className='icon-arrow'>
               <ArrowToLeft/>
+              </div>
+              
             </button>
             <button className="button-carousel" href="#carouselExampleIndicators2" role="button" data-bs-slide="next">
-              <ArrowToRight />
+            <div className='icon-arrow'>
+              <ArrowToRight/>
+              </div>
             </button>
           </div>
         </div>
@@ -30,9 +35,9 @@ const CarouselMenu = () => {
           <div className="carousel-inner">
           <div className="carousel-item active">
           <div className='container-card-trending'>
-            <div className="row flex text-center justify-content-center">
+           
               {filteredProductsByTrending.slice(0, 3).map((product) => (
-                  <div className="col" key={product.id}>
+                  <div className="container-card-carousel" key={product.id}>
                     <CardTrending
                       title={product.name}
                       description={`Price US$${product.price}`}
@@ -42,15 +47,14 @@ const CarouselMenu = () => {
                   </div>
                 ))}
                             
-              </div>
+              
             </div>
           </div>
             
             <div className="carousel-item">
             <div className='container-card-trending'>
-              <div className="row flex text-center justify-content-center">
                 {filteredProductsByTrending.slice(3, 6).map((product) => (
-                  <div className="col" key={product.id}>
+                  <div className="container-card-carousel" key={product.id}>
                     <CardTrending
                       title={product.name}
                       description={`Price US$${product.price}`}
@@ -59,8 +63,7 @@ const CarouselMenu = () => {
                     />
                   </div>
                 ))}
-                            
-                </div>
+                
               </div>
             </div>
           </div>
