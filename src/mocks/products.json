@@ -32,13 +32,7 @@
       { "id": 4, "color":"green", "type":"glass",  "name": "Royal Albert Polka", "price": 35.96 ,"category": "coffee-cup" ,"trending":"Yes","imageUrl":"https://m.media-amazon.com/images/I/71F9l7UuQoL._AC_SL1500_.jpg",
       "quantity": 0  },
       { "id": 5, "color":"blue", "type":"glass",  "name": "Teaware Raven", "price": 29.80 ,"category": "tea-cup" ,"trending":"Yes","imageUrl":"https://m.media-amazon.com/images/I/51XcdfWtf3L._AC_SL1500_.jpg",
-      "quantity": 0  },
-      { "id": 6, "color":"blue", "type":"ceramic",  "name": "Villeroy & Boch Vieux Luxembourg", "price": 34.74 ,"category": "coffee-cup" ,"trending":"Yes","imageUrl":"https://m.media-amazon.com/images/I/51QGTyf3L8L._AC_SL1500_.jpg" ,
-      "quantity": 0 },
-      { "id": 7, "color":"blue", "type":"ceramic",  "name": "Villeroy & Boch Vieux Luxembourg", "price": 34.74 ,"category": "coffee-cup" ,"trending":"Yes","imageUrl":"https://m.media-amazon.com/images/I/51QGTyf3L8L._AC_SL1500_.jpg" ,
-      "quantity": 0 },
-      { "id": 8, "color":"blue", "type":"ceramic",  "name": "Villeroy & Boch Vieux Luxembourg", "price": 34.74 ,"category": "coffee-cup" ,"trending":"Yes","imageUrl":"https://m.media-amazon.com/images/I/51QGTyf3L8L._AC_SL1500_.jpg" ,
-      "quantity": 0 }
+      "quantity": 0  }
   
     ],
     "total":100,
